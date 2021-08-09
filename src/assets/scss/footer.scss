@@ -1,0 +1,122 @@
+.footer {
+  height: auto;
+  position: relative;
+  .container {
+    height: 100%;
+    .row {
+      height: 100%;
+      .nopadding-right {
+        padding: 0!important;
+      }
+    }
+  }
+  .footer__wrap {
+    background-color: transparentize($body-text, 0.15);
+    opacity: 0.85;
+    padding: 5.25rem 4rem;
+    height: 100%;
+    @include media($md) {
+      padding: 5rem 1rem;
+    }
+  }
+  .footer__title {
+    margin-bottom: 2.5rem;
+    color: $white;
+    border-top: 0.25rem $white solid;
+    padding-top: 1rem;
+  }
+  .footer__info {
+    color: $white;
+  }
+  .footer__name {
+  }
+  .footer__company {
+  }
+  .footer__contacts {
+    display: flex;
+  }
+  .footer__email {
+    margin-right: 0.625rem;
+    a {
+      color: $white;
+      &:hover {
+        color: $white;
+      }
+    }
+  }
+  .footer__tel a {
+    color: $white;
+    &:hover {
+      color: $white;
+    }
+  }
+
+  & form {
+    & input,
+    textarea {
+      width: 100%;
+      background-color: transparent;
+      color: $white;
+      border: 0.0625rem solid $white;
+      margin-bottom: 0.75rem;
+    }
+    ::placeholder {
+      color: $white;
+      opacity: 1;
+    }
+  }
+  & form {
+    margin-top: 2.5rem;
+  }
+  & input {
+    padding: 0.6875rem 0.3125rem;
+  }
+  & textarea {
+    padding: 0.625rem 0.3125rem;
+  }
+}
+
+.privacy-policy {
+  color: $white;
+  font-size: 0.75rem;
+}
+.privacy-policy__link {
+  color: $white;
+  &:hover {
+    color: $white;
+  }
+}
+
+.captca {
+  background-image: url(../img/image5.png);
+  width: 18.875rem;
+  height: 4.75rem;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  @include media($md) {
+    width: 14.875rem;
+    height: 3.8125rem;
+  }
+}
+.footer__btn {
+  display: flex;
+  align-items: center;
+  padding: 0.5rem 1.5rem;
+  margin-top: 1rem;
+  width: 100%;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+
+.footer__logo {
+  position: absolute;
+  bottom: 3.3125rem;
+  left: 0.8125rem;
+  & svg {
+    height: 5rem;
+    width: 28.75rem;
+  }
+
+}

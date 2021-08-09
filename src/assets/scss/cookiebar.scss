@@ -1,0 +1,36 @@
+.cookiebar {
+    position: absolute;
+    left: 0.525rem;
+    bottom: -0.5875rem;
+    background-color: $white;
+    box-shadow: 0px 2.125rem 5rem rgba(36, 30, 27, 0.2);
+    z-index: 2;
+    background-color: $white;
+    padding: 0.5rem 1rem;
+    display: flex;
+    align-items: center;
+
+}
+.cookiebar__text-wrap {
+    margin-right: 0.5rem;
+}
+.cookiebar__text {
+    color: $gray8;
+    font-size: 0.75rem;
+    font-weight: 400;
+    line-height: 1.125rem;
+    margin-right: .375rem;
+}
+.cookiebar__privacy {
+    color: inherit;
+    &:hover {
+        color: $gray8;
+    }
+}
+.cookiebar__btn {
+    border: 0.125rem solid #0C0C0C;
+    letter-spacing: -0.3px;
+    height: 1.75rem;
+    display: flex;
+    align-items: center;
+}

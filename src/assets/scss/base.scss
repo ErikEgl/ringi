@@ -1,0 +1,150 @@
+.container {
+  max-width: 85.375rem;
+  width: 100%;
+}
+body {
+  background-color: $white;
+}
+* {
+  box-sizing: border-box;
+  font-family: Helvetica, Arial, sans-serif !important;
+  font-weight: 400;
+}
+html {
+  scroll-behavior: smooth;
+  font-size: 1rem;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: Helvetica, Arial, sans-serif;
+  font-style: normal;
+  font-weight: 700;
+}
+
+h1 {
+  font-size: 2.5rem;
+  line-height: 3.125rem;
+  letter-spacing: -0.02em;
+  @include media($xs) {
+    font-size: 2.125rem;
+    line-height: 2.625rem;
+    letter-spacing: 0em;
+  }
+
+  @include media(21.25rem) {
+    font-size: 1.925rem;
+  }
+}
+
+h2 {
+  font-size: 2rem;
+  line-height: 2.5rem;
+  letter-spacing: -0.01em;
+  color: $body-text;
+  border-top: 0.25rem $body-text solid;
+  padding-top: 1rem;
+  @include media($md) {
+    font-size: 1.75rem;
+    padding-top: 0.5rem!important;
+  }
+}
+h3 {
+  font-size: 1.625rem;
+  line-height: 2rem;
+  letter-spacing: 0em;
+}
+
+h4 {
+  font-size: 1.3125rem;
+  line-height: 1.625rem;
+  letter-spacing: 0em;
+}
+
+h5 {
+  font-size: 1.125rem;
+  line-height: 1.375rem;
+  letter-spacing: 0em;
+}
+
+h6 {
+  font-size: 0.875rem;
+  line-height: 1.125rem;
+  letter-spacing: 0.1em;
+}
+
+a {
+  cursor: pointer;
+  pointer-events: all;
+}
+.btn {
+  font-family: Helvetica;
+  font-style: normal;
+  font-weight: 700;
+  text-align: center;
+  cursor: pointer;
+  pointer-events: all;
+}
+
+.red-btn {
+  background-color: $error;
+  color: $white;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  letter-spacing: 0em;
+  &:hover {
+    background-color: $error-hover;
+    color: $white;
+  }
+  @include media($xs) {
+    width: 100%;
+  }
+}
+
+.nopadding-margin {
+  padding: 0 !important;
+  margin: 0 !important;
+}
+.nopadding-right {
+  padding-right: 0!important;
+}
+.header {
+  border: 1rem solid $white;
+  @include media($xs) {
+    border: 0.5rem solid $white;
+  }
+}
+.advantages,
+.adv-img-block,
+.map-desc-block,
+.map-eng-block,
+.details, 
+.footer {
+  border-bottom: 1rem solid $white;
+  border-right: 1rem solid $white;
+  border-left: 1rem solid $white;
+
+  @include media($xs) {
+    border-bottom: 0.5rem solid $white;
+    border-right: 0.5rem solid $white;
+    border-left: 0.5rem solid $white;
+  }
+}
+
+.adv-img-block,
+.map-desc-block,
+.map-eng-block,
+.details, 
+.footer {
+  // height: 100vh;
+  height: 43.75rem;
+  min-height: 43.75rem;
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}

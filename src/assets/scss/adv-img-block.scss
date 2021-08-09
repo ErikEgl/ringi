@@ -1,0 +1,10 @@
+.adv-img-block {
+}
+.adv-img-block__text {
+  color: $white;
+  border-top: 0.25rem $white solid;
+  margin-top: 7.4rem;
+  @include media($md) {
+    margin-top: 5rem;
+  }
+}

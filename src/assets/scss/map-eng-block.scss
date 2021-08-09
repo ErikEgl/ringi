@@ -1,0 +1,19 @@
+.map-eng-block {
+    
+    @include media($lg) {
+        height: 100%;
+        width: 100%;
+        min-height: 39.3125rem;
+    }
+    @include media($md) {
+        min-height: 32.3125rem;
+
+    }
+    @include media($sm) {
+        min-height: 22.3125rem;
+    }
+    @include media($xs) {
+        height: unset;
+        min-height: 12.3125rem;
+    }
+}

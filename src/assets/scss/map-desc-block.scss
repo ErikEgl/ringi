@@ -1,0 +1,120 @@
+.map-desc-block {
+  background-color: $brand-blue-light;
+  position: relative;
+  @include media($md) {
+    background-image: none !important;
+    height: unset;
+    padding-bottom: 5rem;
+  }
+  .map-desc-block__bg-img {
+    background-position: 0.125rem 1.5rem;
+    // background-position: center;
+    background-size: contain;
+    height: 100%;
+    background-repeat: no-repeat;
+    margin: auto;
+    @include media(1260px) {
+      background-position: -2.875rem 1.5rem;
+    }
+    @include media($lg) {
+      background-position: center;
+    }
+    @include media($md) {
+      background-image: none !important;
+      height: unset;
+    }
+    @include media-mm(1200px, 1201px) {
+        background-position: -2.875rem 1.5rem;
+    }
+  }
+
+  .mobile-bg-img {
+    display: none;
+    @include media($md) {
+      display: block;
+      height: 26rem;
+      width: 100%;
+      background-position: top;
+      background-size: contain;
+      background-repeat: no-repeat;
+    }
+    @include media($sm) {
+      height: 13.5rem;
+    }
+  }
+}
+
+.map-desc-block__desc-wrap {
+  margin-top: 2.0625rem;
+  @include media($lg) {
+    margin-top: 0;
+  }
+  @include media($md) {
+    justify-content: space-evenly;
+    display: flex;
+    width: 100%;
+    margin-top: 10px;
+  }
+  @include media($sm) {
+    flex-direction: column;
+  }
+}
+.map-desc-block__building-info {
+  background-color: $white;
+  padding: 1rem;
+  width: 12rem;
+  margin-left: -1.125rem;
+  &:not(:last-child) {
+    margin-bottom: 0.5rem;
+  }
+  @include media($md) {
+    margin: auto;
+  }
+  @include media($sm) {
+    width: 100%;
+  }
+}
+
+.margin-0 {
+  padding: 0 15px;
+  width: 100%;
+}
+.map-desc-block__building-title {
+  border-bottom: 0.125rem solid $body-text;
+  padding-bottom: 0.25rem;
+}
+.map-desc-block__building-list {
+}
+.map-desc-block__list-item {
+  border-bottom: 0.0625rem solid $body-text;
+  margin: 0.1875rem 0;
+  &:last-child {
+    border-bottom: 0.125rem solid $body-text;
+  }
+}
+.map-desc-block__desc-wrapper {
+  margin-top: 2.0625rem;
+  @include media($lg) {
+    margin-top: 0;
+  }
+
+}
+.map-desc-block__info-title {
+  margin-bottom: 2.6875rem;
+}
+.map-desc-block__info-text {
+  margin-bottom: 0.25rem;
+}
+
+.map-desc-block__map-location {
+}
+
+.map-desc-block__btn-mobile {
+  margin: 1.25rem 0;
+}
+.map-desc-block__btn-pc {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+  bottom: 4%;
+}

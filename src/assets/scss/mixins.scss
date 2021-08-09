@@ -1,0 +1,33 @@
+@mixin clear-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+@mixin anim($time: 0.3s) {
+  transition: $time ease-out all;
+}
+
+@mixin font($f) {
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+
+
+@mixin font($f) {
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+
+@mixin media($size){
+  @media screen and (max-width: $size){
+      @content;
+  }
+}
+
+@mixin media-mm($size1, $size2){
+  @media screen and (min-width: $size1) and (max-width: $size2) { 
+    @content;
+  }
+}
+

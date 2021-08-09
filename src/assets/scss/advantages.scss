@@ -1,0 +1,30 @@
+.advantages {
+  background: #c7deef;
+  padding: 18vh 0 22.9vh;
+  @include media($md) {
+    padding: 13vh 0 13vh;
+  }
+}
+
+.advantages__wrap {
+  &:first-child{
+    margin-left: 1.5rem;
+  }
+}
+.advantages__title {
+  margin: 1rem 0 2.5rem;
+  border-top: 0.25rem $body-text solid;
+  padding-top: 1rem;
+}
+.advantages__list {
+}
+.advantages__list-item {
+  list-style: inside;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.6563rem;
+  letter-spacing: 0em;
+  color: $body-text;
+  margin-bottom: 0.375rem;
+}
